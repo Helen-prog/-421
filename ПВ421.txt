@@ -33,3 +33,18 @@ Nav.css
 
 Articles.js
 Article.js
+
+git init
+git status
+
+git add -A
+		--all
+		.
+		
+git commit -m "first commit"	
+
+git remote add origin https://github.com/Helen-prog/-421.git	
+git push -u origin master
+
+
+
