@@ -1,0 +1,35 @@
+win + R => cmd
+
+node -v
+
+npx create-react-app .
+
+JSX
+
+Виртуальный DOM
+
+SPA
+
+npm start
+
+javascript   javascriptreact
+
+src
+	conponents
+		header
+			Header.js
+			Header.css
+		article
+			Article.js
+			Article.css
+		footer
+			Footer.js
+			
+Ctrl + C
+
+	
+Nav.js
+Nav.css
+
+Articles.js
+Article.js
