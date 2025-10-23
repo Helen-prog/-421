@@ -47,4 +47,38 @@ git remote add origin https://github.com/Helen-prog/-421.git
 git push -u origin master
 
 
+npx create-react-app .
 
+State
+
+Hello.js
+Length.js
+Form.js
+
+Range.js
+
+Posts.js
+Post.js
+
+
+layout
+	Header.js
+	Header.css
+	Footer.js
+	Footer.css
+	Main.js
+	Main.css
+components
+	MovieList.js
+	MovieList.css
+	Movie.js
+	Movie.css
+	Preloader.js
+	Preloader.css
+	Search.js
+	Search.css
+	
+http://www.omdbapi.com/?apikey=2a56611e&s=matrix
+http://www.omdbapi.com/?apikey=2a56611e&s=one
+http://www.omdbapi.com/?apikey=2a56611e&s=one&type=movie
+	
