@@ -25,6 +25,7 @@
     border-radius: 6px;
     font-size: 20px;
     border: 2px solid #003248;
+    cursor: pointer;
 }
 
 .radio{
@@ -39,4 +40,10 @@
 .radio label{
     margin-right: 60px;
     font-size: 22px;
+}
+
+.navigation{
+    margin: 30px;
+    display: flex;
+    justify-content: space-between;
 }
