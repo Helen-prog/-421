@@ -79,6 +79,44 @@ components
 	Search.css
 	
 http://www.omdbapi.com/?apikey=2a56611e&s=matrix
-http://www.omdbapi.com/?apikey=2a56611e&s=one
-http://www.omdbapi.com/?apikey=2a56611e&s=one&type=movie
+http://www.omdbapi.com/?apikey=2a56611e&s=one&page=1
+http://www.omdbapi.com/?apikey=2a56611e&s=one&type=movie&page=1
 	
+	
+video_pv421
+
+npm install gh-pages --save-dev
+
+npm run deploy
+
+Хук состояния
+
+import {useState} from 'react';
+
+let [name, setName] = useState("");
+
+
+Counter.js
+Person.js
+Modal.js
+Modal.css
+Item.js
+Task.js
+Form.js
+
+
+components	
+	quizzes
+		Quizzes.js
+		Quizzes.css
+	progress
+		ProgressBar.js
+		ProgressBar.css
+	result
+		Result.js
+		Result.css
+		
+		
+npm i react-image-gallery
+		
+

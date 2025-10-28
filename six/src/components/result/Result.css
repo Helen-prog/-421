@@ -1,0 +1,17 @@
+.text{
+    font-size: 20px;
+    text-align: center;
+}
+
+.but{
+    border: 2px solid #01588a;
+    margin-top: 20px;
+    display: block;
+    background: #01588a;
+    color: #FFF;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 18px;
+}
