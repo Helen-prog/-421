@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Counter(){
     let [cnt, setCnt] = useState(0);
@@ -8,6 +8,12 @@ function Counter(){
     function decrement(){
         setCnt(cnt - 1);
     }
+
+    useEffect(() => {
+        console.log("Монтирование", cnt);
+        return () => console.log("Размонтирование");
+        
+    }, [cnt]);
 
     return (
         <div>
