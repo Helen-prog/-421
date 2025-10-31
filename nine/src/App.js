@@ -1,23 +1,26 @@
-import { Routes, Route, NavLink } from 'react-router-dom';
+import { Routes, Route, Navigate } from 'react-router-dom';
 
 import Home from './Home';
 import About from './About';
 import Article from './Article';
+import Layout from './components/Layout';
+import AboutInfo from './AboutInfo';
+import NotFoundPage from './NotFoundPage';
 
 import './App.css';
 
 function App() {
   return (
     <div>
-      <ul>
-        <li><NavLink to="/" className="my">Home page</NavLink></li>
-        <li><NavLink to="/about" className={({ isActive }) => isActive ? "orange" : "my"}>About</NavLink></li>
-        <li><NavLink to={{pathname: "/articles"}} style={({ isActive }) => ({ color: isActive ? "green" : "blue" })}>Articles</NavLink></li>
-      </ul>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/articles" element={<Article />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
+          <Route path="about/:id" element={<AboutInfo />} />
+          <Route path="articles" element={<Article />} />
+          <Route path="articles-us" element={<Navigate to="/articles" replace />} />
+          <Route path='*' element={<NotFoundPage />} />
+        </Route>
       </Routes>
     </div>
   );

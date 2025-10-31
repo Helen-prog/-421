@@ -135,3 +135,45 @@ npm install react-router-dom
 Home.js
 About.js
 Article.js
+Item.js
+AboutInfo.js
+NotFoundPage.js
+components
+	Layout.js
+	
+
+http://localhost:3000/
+http://localhost:3000/about/2
+
+
+config.js
+api.js
+components
+	preloader
+		...
+	categoryList
+		CategoryList.js
+		CategoryList.css
+	categoryItem
+		CategoryItem.js
+		CategoryItem.css
+pages
+	footer
+	header
+	Layout.js
+main
+	Home.js
+	About.js
+	Contacts.js
+	NotFound.js
+	
+	
+List all meal categories
+https://www.themealdb.com/api/json/v1/1/categories.php
+
+Lookup full meal details by id
+https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772
+
+Filter by Category
+https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
+

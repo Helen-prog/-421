@@ -1,7 +1,26 @@
-function Article(){
+import { useState } from "react";
+import { Link } from "react-router-dom";
+import Item from "./Item";
+
+function Article() {
+    let [articles, setArticles] = useState([
+        { name: "Components", title: "Компоненты аналогичны функциям JavaScript. Они хранят состояние с помощью свойств и возвращают элементы React, которые затем появляются на веб-странице." },
+        { name: "Props", title: "Props представляет коллекцию значений, которые ассоциированы с компонентом. Эти значения позволяют создавать динамические компоненты, которые не зависят от жестко закодированных статических данных." },
+        { name: "State", title: "Объект state описывает внутреннее состояние компонента, он похож на props за тем исключением, что состояние определяется внутри компонента и доступно только из компонента. Также в отличие от props значения в state можно изменять." }
+    ]);
+
     return (
-        <div>
+        <div className="content">
             <h2>Article</h2>
+
+            {
+                articles.map((item, index) => {
+                    return (
+                        <Item key={index} name={item.name} title={item.title} />
+                    )
+                })
+            }
+            <Link to='/'>На главную</Link>
         </div>
     )
 }
