@@ -149,6 +149,8 @@ http://localhost:3000/about/2
 config.js
 api.js
 components
+	MealList.js
+	Meal.js
 	preloader
 		...
 	categoryList
@@ -166,6 +168,10 @@ main
 	About.js
 	Contacts.js
 	NotFound.js
+	Category.js
+	Category.css
+	Recipe.js
+	Recipe.css
 	
 	
 List all meal categories
@@ -177,3 +183,19 @@ https://www.themealdb.com/api/json/v1/1/lookup.php?i=52772
 Filter by Category
 https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood
 
+
+
+Enums
+
+npx create-react-app --template typescript .
+
+
+components
+	Card.tsx
+	UserList.tsx
+	UserItem.tsx
+	List.tsx
+	TodoItem.tsx
+type
+	types.tsx
+	

@@ -4,6 +4,8 @@ import Home from "./main/Home";
 import About from "./main/About";
 import Contacts from "./main/Contacts";
 import NotFound from "./main/NotFound";
+import Category from "./main/Category";
+import Recipe from "./main/Recipe";
 
 function App() {
   const text = {
@@ -17,6 +19,8 @@ function App() {
         <Route index element={<Home />} />
         <Route path="about" element={<About text={text} />} />
         <Route path="contacts" element={<Contacts />} />
+        <Route path="category/:name" element={<Category />} />
+        <Route path="meal/:id" element={<Recipe />} />
         <Route path="*" element={<NotFound />} />
       </Route>
      </Routes>

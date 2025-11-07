@@ -1,3 +1,4 @@
+import {Link} from 'react-router-dom';
 import './CategoryItem.css';
 
 function CategoryItem({strCategory, strCategoryThumb, strCategoryDescription}){
@@ -8,7 +9,7 @@ function CategoryItem({strCategory, strCategoryThumb, strCategoryDescription}){
             <p>{strCategoryDescription.slice(0, 80)}...</p>
 
             <div className="card-action">
-                <a href="#1">Watch Category</a>
+                <Link to={`/category/${strCategory}`}>Watch Category</Link>
             </div>
         </div>
     )

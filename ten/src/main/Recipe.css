@@ -1,0 +1,19 @@
+.recipe img{
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.recipe h5{
+    display: inline;
+}
+
+.table{
+    width: 100%;
+}
+
+.table th, .table td{
+    text-align: center;
+    border-bottom: 1px solid #d3d3d3;
+    padding: 10px 0;
+}
